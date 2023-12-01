@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <img id="minecraft" alt="minecraft-logo" src="https://i.pinimg.com/474x/33/ee/f5/33eef535b2ffa74da6a14c01834f2932.jpg" width="100px" height="100px"/>
+
+</br>
+
+<button onclick= "switchFood()"> which minecraft food are u?</button>  
+</body>
+<script>
+const pieImg = "https://www.pngitem.com/pimgs/m/397-3973031_minecraft-food-pumpkin-pie-hd-png-download.png";
+
+const appleImg = "https://i.pinimg.com/564x/24/b7/9c/24b79c1fd0216d1e7799d366fa77fdf2.jpg";
+
+const watermelonImg = "https://i.pinimg.com/564x/bd/c6/78/bdc6784d9f07e53b1098541cd02da771.jpg";
+
+const carrotImg = "https://i.pinimg.com/564x/e9/45/5a/e9455addca62f9920b65368f992e7463.jpg";
+
+const breadImg = "https://i.pinimg.com/474x/55/b9/36/55b936264d97528450f9f2be0d4cf621.jpg";
+
+const cookieImg = "https://i.pinimg.com/564x/1d/38/e8/1d38e8c53c8551624185753b2be87c7c.jpg";
+
+
+
+function switchFood() {
+  
+  let randNum =
+       (Math.floor(Math.random()*6)+1);
+
+if (randNum == 1) {
+  minecraft.src = appleImg;
+} 
+else if (randNum == 2) {
+  minecraft.src = pieImg;
+}  
+else if (randNum == 3) {
+  minecraft.src = watermelonImg;
+}
+else if (randNum == 4) {
+  minecraft.src = carrotImg;
+}
+else if (randNum == 5) {
+  minecraft.src = breadImg;
+}
+else if (randNum == 6) {
+  minecraft.src = cookieImg;
+}
+}
+</script>
+</html>
